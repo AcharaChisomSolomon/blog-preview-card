@@ -51,7 +51,7 @@ section {
     box-shadow: var(--card-shadow);
     border: 1px solid var(--card-main-text-color);
 }
-@media (min-width: 920px){
+@media (min-width: 900px){
     section {
         width: 24rem;
     }
