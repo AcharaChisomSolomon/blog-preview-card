@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Figtree Extrabold';
+    src: url(../assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Figtree SemiBold';
+    src: url(../assets/fonts/static/Figtree-SemiBold.ttf);
+}
+:root {
+    --main-backgroung-color: #f4d04e;
+    --card-backgroung-color: #fff;
+    --card-main-text-color: #111;
+    --card-secondary-text-color: #7f7f7f;
+    --card-shadow: 16px 16px 0 0 #000;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+p, h2 {
+    margin: 0;
+}
+body {
+    background-color: var(--main-backgroung-color);
+    font-family: 'Figtree Extrabold', sans-serif;
+    color: var(--card-main-text-color);
+    line-height: 1.5;
+    margin: 0;
+    height: 100vh;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+img {
+    max-width: 100%;
+    border-radius: 0.625rem;
+    height: auto;
+}
+
+section {
+    width: 20.4375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: var(--card-backgroung-color);
+    border-radius: 1.25rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--card-main-text-color);
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.call-to-action {
+    background-color: var(--main-backgroung-color);
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    align-self: flex-start;
+    border-radius: 0.25rem;
+}
+.date {
+    font-family: 'Figtree SemiBold', sans-serif;
+    font-size: 0.75rem;
+}
+.title {
+    font-size: 1.25rem;
+}
+.title:hover {
+    color: var(--main-backgroung-color);
+    cursor: pointer;
+}
+.description {
+    font-family: 'Figtree SemiBold', sans-serif;
+    font-size: 0.875rem;
+    color: var(--card-secondary-text-color);
+}
+
+.author {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+.author img {
+    width: 2rem;
+    height: 2rem;
+}
+.author .name {
+    font-size: 0.875rem;
+}
