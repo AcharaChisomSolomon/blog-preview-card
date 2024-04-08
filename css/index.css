@@ -51,6 +51,11 @@ section {
     box-shadow: var(--card-shadow);
     border: 1px solid var(--card-main-text-color);
 }
+@media (min-width: 920px){
+    section {
+        width: 24rem;
+    }
+}
 .main-content {
     display: flex;
     flex-direction: column;
@@ -58,17 +63,17 @@ section {
 }
 .call-to-action {
     background-color: var(--main-backgroung-color);
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem);
     padding: 0.25rem 0.75rem;
     align-self: flex-start;
     border-radius: 0.25rem;
 }
 .date {
     font-family: 'Figtree SemiBold', sans-serif;
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem);
 }
 .title {
-    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 1.5vw, 1.5rem)
 }
 .title:hover {
     color: var(--main-backgroung-color);
@@ -76,7 +81,7 @@ section {
 }
 .description {
     font-family: 'Figtree SemiBold', sans-serif;
-    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
     color: var(--card-secondary-text-color);
 }
 
