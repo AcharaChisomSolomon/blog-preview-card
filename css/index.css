@@ -11,7 +11,8 @@
     --card-backgroung-color: #fff;
     --card-main-text-color: #111;
     --card-secondary-text-color: #7f7f7f;
-    --card-shadow: 16px 16px 0 0 #000;
+    --card-shadow: 8px 8px 0 0 #000;
+    --card-shadow-hover: 16px 16px 0 0 #000;
 }
 *,
 *::before,
@@ -50,6 +51,9 @@ section {
     border-radius: 1.25rem;
     box-shadow: var(--card-shadow);
     border: 1px solid var(--card-main-text-color);
+}
+section:hover {
+    box-shadow: var(--card-shadow-hover);
 }
 @media (min-width: 900px){
     section {
